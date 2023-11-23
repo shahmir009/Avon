@@ -1,0 +1,59 @@
+export default class AvonConfig extends Object {
+  token: string;
+  prefix: string;
+  nodes: object[];
+  spotiId: string;
+  owners: string[];
+  spotiSecret: string;
+  spotiNodes: object[];
+  webhooks: object;
+  supportId: string;
+  color: string;
+  server: string;
+  voteUrl: string;
+  voteApi: string;
+  setupBgLink: string;
+  botinvite;
+  constructor() {
+    super();
+    this.token =
+      "MTA5MjEwODEzNTgxODM1MDU5Mg.GQfG40.iyoQmqsLDn6l3f1xhT4lKI2KyvB46Ivp0PzaGA";
+    this.prefix = "+";
+    this.nodes = [
+      {
+        name: `Avon`,
+        url: `the-net.loves-genshin.lol:2333`,
+        auth: `luxurydev.eu`,
+        secure: false,
+      },
+    ];
+    this.voteApi =
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjkwNDMxNzE0MTg2NjY0NzU5MiIsImJvdCI6dHJ1ZSwiaWF0IjoxNjczNTI3OTYzfQ.WwA0KXh_nAQcBmR7BPqgLGyElYZheTQmguQfA2F6aNc";
+    this.webhooks = {
+      guildCreate:
+        "https://discord.com/api/webhooks/1173151782667571210/GZwoWl6LQXuW0zsCBz2oCI2xck0WSahoP5L-NtuWjfh8jkrW3V8tChxhKBidzAlLFgde",
+      guildDelete:
+        "https://discord.com/api/webhooks/1173151782667571210/GZwoWl6LQXuW0zsCBz2oCI2xck0WSahoP5L-NtuWjfh8jkrW3V8tChxhKBidzAlLFgde",
+      Cmds: "https://discord.com/api/webhooks/1173151782667571210/GZwoWl6LQXuW0zsCBz2oCI2xck0WSahoP5L-NtuWjfh8jkrW3V8tChxhKBidzAlLFgde",
+    };
+    this.server = "https://dsc.gg/officalmusical";
+    this.botinvite = "https://discord.com/api/oauth2/authorize?client_id=1093791684896235551&permissions=8&scope=applications.commands%20bot";
+    this.spotiId = "6e5e869116404a7791dc8701559bbc24";
+    this.spotiSecret = "545dd6dfe441412aaa84c6a38b9b2ceb";
+    this.owners = ["992472529413349400"];
+    this.color = "#f54c4c";
+    this.supportId = "1101783002163449957";
+    this.spotiNodes = [
+      {
+        id: `Avon`,
+        host: `the-net.loves-genshin.lol`,
+        port: 2333,
+        password: `luxurydev.eu`,
+        secure: false,
+      },
+    ];
+    this.voteUrl = "https://top.gg/bot/904317141866647592/vote";
+    this.setupBgLink =
+      "https://media.discordapp.net/attachments/1127041630357176400/1141111600665874452/Musical.png?width=960&height=387";
+  }
+}
